@@ -184,7 +184,7 @@ export default function Users(props) {
         />
       </Head>
 
-      <Text align="center" weight="bold" mb="xs" size="lg" size="lg">
+      <Text align="center" weight="bold" mb="xs" size="lg">
         Felhasználók
       </Text>
 

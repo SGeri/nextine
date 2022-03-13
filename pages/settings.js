@@ -66,10 +66,8 @@ export default function Settings() {
               {email}
             </Text>
 
-            <Button variant="default" fullWidth mt="md">
-              <a href="/users" style={{ all: "unset" }}>
-                Kijelentkezés
-              </a>
+            <Button variant="default" fullWidth mt="md" onClick={logout}>
+              Kijelentkezés
             </Button>
           </Paper>
         </div>
