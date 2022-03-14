@@ -11,12 +11,50 @@ import Search from "../util/components/forms/Search";
 import EditUserForm from "../util/components/forms/EditUser";
 import SendMessageForm from "../util/components/forms/SendMessage";
 
-export default function Users(props) {
+const MOCKUP_USERS = [
+  {
+    name: "John Doe",
+    email: "john@doe.com",
+    address: "Mankato Mississippi 96522, Nulla st. 10",
+    workplace: "Samsung",
+    phone: "(257) 563-7401",
+  },
+  {
+    name: "Cecilia Chapman",
+    email: "Cecilia@doe.com",
+    address: "Tamuning PA 10855, Sodales Av. 4264",
+    workplace: "Apple",
+    phone: "(786) 713-8616",
+  },
+  {
+    name: "Kyla Olsen",
+    email: "Kyla@doe.com",
+    address: "Chelsea MI 67708, Nunc Road 4",
+    workplace: "Microsoft",
+    phone: "(947) 278-5929",
+  },
+  {
+    name: "Nyssa Vazquez",
+    email: "Nyssa@doe.com",
+    address: "Latrobe DE 38100, Viverra. Avenue",
+    workplace: "Google",
+    phone: "(608) 265-2215",
+  },
+  {
+    name: "Aaron Hawkins",
+    email: "Aaron@doe.com",
+    address: "Santa Rosa MN 98804, Tortor. Street 42",
+    workplace: "Facebook",
+    phone: "(959) 119-8364",
+  },
+];
+
+export default function Users(/*props*/) {
   const clipboard = useClipboard();
   const notifications = useNotifications();
   const modals = useModals();
 
-  const [users, setUsers] = useState(props.users);
+  const [users, setUsers] = useState(MOCKUP_USERS); // props.users
   const [tableRows, setTableRows] = useState([]);
   const [drawerOpened, toggleDrawer] = useState(false);
   const [selectedProfileData, setSelectedProfileData] = useState({});
@@ -70,7 +108,7 @@ export default function Users(props) {
     search = search.toLowerCase().trim();
 
     if (!search) {
-      setUsers(props.users);
+      setUsers(MOCKUP_USERS); // props.users
       setSearchLoading(false);
       return;
     }
@@ -90,7 +128,7 @@ export default function Users(props) {
   };
 
   const cancelSearch = () => {
-    setUsers(props.users);
+    setUsers(MOCKUP_USERS); // props.users
   };
 
   const onSubmitEditForm = (oldUser, newUser) => {
