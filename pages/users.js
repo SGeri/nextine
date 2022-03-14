@@ -269,6 +269,7 @@ export default function Users(/*props*/) {
   );
 }
 
+/*
 export async function getServerSideProps() {
   const request = await fetch("http://localhost:3000/api/users");
   const users = await request.json();
@@ -279,3 +280,4 @@ export async function getServerSideProps() {
     },
   };
 }
+*/
