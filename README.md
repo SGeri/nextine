@@ -1,6 +1,6 @@
 Admin Dashboard UI with functionality and NextJS API Routes.
 
-##### [Project Demo here!](demo)
+##### [Project Demo here!](https://nextine.vercel.app)
 
 ### Features
 
@@ -15,11 +15,11 @@ Admin Dashboard UI with functionality and NextJS API Routes.
 
 ### Planned Features / Todos
 
-- Online Project Demo
-- Fully implemented NextAuth authentication with protected routes and custom login page
-- Extension of API routes and implementation
-- Database implementation (most likely MySQL with Prisma)
-- Language selector (English + Hungarian)
+- Online Project Demo ✔️
+- Fully implemented NextAuth authentication with protected routes and custom login page ❌
+- Extension of API routes and implementation ❌
+- Database implementation (most likely MySQL with Prisma) ❌
+- Language selector (English + Hungarian) ❌
 
 ### How to use local version?
 
